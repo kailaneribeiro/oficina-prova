@@ -13,4 +13,4 @@ app.use('/oficina',workshopRouter)
 app.use('/veiculos',vehicleRouter)
 app.use('/manutencao',maintenanceRouter)
 
-app.listen(3000,() => console.log('servidor rodando na port 300'))
+app.listen(process.env.PORT,() => console.log('servidor rodando na port 300'))
